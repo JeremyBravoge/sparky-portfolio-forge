@@ -14,33 +14,33 @@ interface Skill {
 const Skills = () => {
   const skillCategories: SkillCategory[] = [
     {
-      title: "Programming Languages",
-      skills: [
-        { name: "Python", level: 90 },
-        { name: "JavaScript", level: 85 },
-        { name: "Java", level: 80 },
-        { name: "C/C++", level: 75 },
-        { name: "SQL", level: 80 },
-      ],
-    },
-    {
       title: "Web Development",
       skills: [
-        { name: "React.js", level: 85 },
-        { name: "Node.js", level: 80 },
         { name: "HTML/CSS", level: 90 },
-        { name: "Express.js", level: 75 },
-        { name: "MongoDB", level: 70 },
+        { name: "JavaScript", level: 85 },
+        { name: "WordPress", level: 88 },
+        { name: "React.js", level: 75 },
+        { name: "PHP", level: 70 },
       ],
     },
     {
-      title: "Tools & Technologies",
+      title: "Web Management",
       skills: [
-        { name: "Git", level: 85 },
-        { name: "Docker", level: 75 },
-        { name: "AWS", level: 70 },
-        { name: "Machine Learning", level: 65 },
-        { name: "DevOps", level: 60 },
+        { name: "Content Management", level: 92 },
+        { name: "SEO", level: 85 },
+        { name: "Analytics", level: 80 },
+        { name: "Performance Optimization", level: 78 },
+        { name: "User Experience", level: 88 },
+      ],
+    },
+    {
+      title: "Computer Science",
+      skills: [
+        { name: "Data Structures", level: 83 },
+        { name: "Algorithms", level: 80 },
+        { name: "Database Systems", level: 85 },
+        { name: "System Architecture", level: 70 },
+        { name: "Version Control", level: 90 },
       ],
     },
   ];
@@ -52,8 +52,8 @@ const Skills = () => {
           <Code className="text-portfolio-blue mb-4 h-8 w-8" />
           <h2 className="section-heading">My Skills</h2>
           <p className="text-portfolio-gray max-w-2xl">
-            As a computer science professional, I've developed expertise in various programming languages, 
-            frameworks, and technologies. Here's an overview of my technical skills.
+            As a computer science professional and web manager intern, I've developed expertise 
+            in various areas of web development, management, and computer science fundamentals.
           </p>
         </div>
 

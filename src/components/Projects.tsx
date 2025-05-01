@@ -14,27 +14,27 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "AI-Powered Learning Platform",
-      description: "Developed an intelligent learning management system that uses AI to personalize education content based on student performance and learning style.",
-      tags: ["Python", "TensorFlow", "React", "MongoDB"],
+      title: "Corporate Website Redesign",
+      description: "Led the redesign of the company website, improving user experience and increasing mobile responsiveness by 40% while managing content migration.",
+      tags: ["WordPress", "UI/UX", "Content Management", "SEO"],
     },
     {
       id: 2,
-      title: "Health Monitoring System",
-      description: "Created a comprehensive health monitoring application that tracks vital signs and provides real-time analytics for healthcare professionals.",
-      tags: ["IoT", "Java", "SQL", "Data Analysis"],
+      title: "E-commerce Integration",
+      description: "Implemented an e-commerce solution for client products, coordinating between development team and stakeholders to ensure timely delivery and functionality.",
+      tags: ["WooCommerce", "Payment Gateway", "Product Management"],
     },
     {
       id: 3,
-      title: "E-Commerce Solution",
-      description: "Built a full-stack e-commerce platform with features like product catalog, user authentication, payment processing, and order management.",
-      tags: ["React", "Node.js", "Express", "MongoDB"],
+      title: "Web Analytics Dashboard",
+      description: "Created a comprehensive analytics dashboard for tracking website performance, user behavior, and conversion metrics to support data-driven decision making.",
+      tags: ["Google Analytics", "Data Visualization", "Reporting"],
     },
     {
       id: 4,
-      title: "Blockchain Voting System",
-      description: "Implemented a secure and transparent voting system using blockchain technology to ensure the integrity of the electoral process.",
-      tags: ["Solidity", "Ethereum", "Web3.js", "React"],
+      title: "Digital Marketing Campaign",
+      description: "Managed the web components of a multi-channel marketing campaign, including landing pages, form integrations, and tracking implementation.",
+      tags: ["Landing Pages", "Forms", "Campaign Tracking"],
     },
   ];
 
@@ -45,8 +45,8 @@ const Projects = () => {
           <Code className="text-portfolio-blue mb-4 h-8 w-8" />
           <h2 className="section-heading">My Projects</h2>
           <p className="text-portfolio-gray max-w-2xl">
-            Here are some of my notable computer science projects that demonstrate my technical 
-            expertise and problem-solving approach in developing innovative solutions.
+            Here are some of my notable web management projects that demonstrate my 
+            technical skills and ability to deliver effective digital solutions.
           </p>
         </div>
 

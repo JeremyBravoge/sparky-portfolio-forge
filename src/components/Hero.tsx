@@ -34,15 +34,14 @@ const Hero = () => {
           <div className="w-full md:w-1/2">
             <p className="text-portfolio-blue font-medium mb-4">Hello, I'm</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-portfolio-dark-blue mb-6">
-              David Kariuki
+              Jeremy Bravoge
             </h1>
             <h2 className="text-2xl md:text-3xl text-portfolio-gray font-medium mb-6">
-              Computer Science Expert
+              Computer Science Professional
             </h2>
             <p className="text-lg text-portfolio-gray mb-8 max-w-2xl">
-              I specialize in software development, system architecture, and innovative 
-              technology solutions. Passionate about creating impactful applications 
-              that solve real-world problems.
+              I specialize in web management and software development with a strong computer science background.
+              Currently based in Nairobi, Kenya, I'm passionate about creating impactful digital solutions.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button className="btn-primary">

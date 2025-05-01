@@ -23,36 +23,35 @@ const About = () => {
           
           <div>
             <h3 className="text-2xl font-bold text-portfolio-dark-blue mb-4">
-              A passionate Computer Scientist based in Kenya
+              A Computer Science Professional based in Nairobi, Kenya
             </h3>
             <p className="text-portfolio-gray mb-6">
-              I'm a dedicated computer science professional with expertise in software development,
-              system design, and technology implementation. I have a strong foundation in programming 
-              languages and modern development frameworks, allowing me to create robust solutions for 
-              complex problems.
+              I'm a skilled computer science professional with experience in web management and development. 
+              Currently completing an internship as a Web Manager, I bring technical expertise and creative problem-solving 
+              to digital projects.
             </p>
             <p className="text-portfolio-gray mb-6">
-              Throughout my career, I've worked on various projects that have enhanced my skills in 
-              web development, mobile applications, and system architecture. I'm committed to continuous 
-              learning and staying updated with the latest technological advancements.
+              My background in computer science has equipped me with strong analytical skills and 
+              technical knowledge that I apply to create efficient and user-friendly web solutions. 
+              I'm passionate about using technology to solve real-world problems in Kenya's growing tech ecosystem.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <p className="font-semibold text-portfolio-dark-blue">Name:</p>
-                <p className="text-portfolio-gray">David Kariuki</p>
+                <p className="text-portfolio-gray">Jeremy Bravoge</p>
               </div>
               <div>
                 <p className="font-semibold text-portfolio-dark-blue">Email:</p>
-                <p className="text-portfolio-gray">david@example.com</p>
+                <p className="text-portfolio-gray">jeremy@example.com</p>
               </div>
               <div>
                 <p className="font-semibold text-portfolio-dark-blue">Location:</p>
-                <p className="text-portfolio-gray">Kenya</p>
+                <p className="text-portfolio-gray">Nairobi, Kenya</p>
               </div>
               <div>
-                <p className="font-semibold text-portfolio-dark-blue">Availability:</p>
-                <p className="text-portfolio-gray">Open to opportunities</p>
+                <p className="font-semibold text-portfolio-dark-blue">Position:</p>
+                <p className="text-portfolio-gray">Web Manager Intern</p>
               </div>
             </div>
           </div>
