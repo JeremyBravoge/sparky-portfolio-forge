@@ -12,41 +12,43 @@ const About = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="bg-portfolio-light-gray rounded-lg p-1">
-            <div className="aspect-square rounded-lg overflow-hidden bg-portfolio-blue/10 flex items-center justify-center">
-              {/* Replace with actual image when available */}
-              <div className="text-6xl text-portfolio-blue">JD</div>
+            <div className="rounded-lg overflow-hidden flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/f6c3ac9c-a79d-446f-abed-6eeb0c83f3b2.png" 
+                alt="Professional Photo" 
+                className="w-full h-auto rounded-lg"
+              />
             </div>
           </div>
           
           <div>
             <h3 className="text-2xl font-bold text-portfolio-dark-blue mb-4">
-              A passionate developer based in New York, USA
+              A passionate Computer Scientist based in Kenya
             </h3>
             <p className="text-portfolio-gray mb-6">
-              I'm a full stack developer with 5+ years of experience in building 
-              web applications. I specialize in JavaScript, React, Node.js, and modern 
-              web technologies. My passion lies in creating intuitive user interfaces 
-              and robust backend solutions.
+              I'm a dedicated computer science professional with expertise in software development,
+              system design, and technology implementation. I have a strong foundation in programming 
+              languages and modern development frameworks, allowing me to create robust solutions for 
+              complex problems.
             </p>
             <p className="text-portfolio-gray mb-6">
-              Throughout my career, I've worked with startups and established companies 
-              to deliver high-quality software that solves complex business problems. 
-              I'm committed to writing clean, maintainable code and following best practices 
-              in software development.
+              Throughout my career, I've worked on various projects that have enhanced my skills in 
+              web development, mobile applications, and system architecture. I'm committed to continuous 
+              learning and staying updated with the latest technological advancements.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <p className="font-semibold text-portfolio-dark-blue">Name:</p>
-                <p className="text-portfolio-gray">John Doe</p>
+                <p className="text-portfolio-gray">David Kariuki</p>
               </div>
               <div>
                 <p className="font-semibold text-portfolio-dark-blue">Email:</p>
-                <p className="text-portfolio-gray">john@example.com</p>
+                <p className="text-portfolio-gray">david@example.com</p>
               </div>
               <div>
                 <p className="font-semibold text-portfolio-dark-blue">Location:</p>
-                <p className="text-portfolio-gray">New York, USA</p>
+                <p className="text-portfolio-gray">Kenya</p>
               </div>
               <div>
                 <p className="font-semibold text-portfolio-dark-blue">Availability:</p>

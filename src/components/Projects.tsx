@@ -1,6 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Link } from "lucide-react";
+import { Code } from "lucide-react";
 
 interface Project {
   id: number;
@@ -14,27 +14,27 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "E-commerce Platform",
-      description: "A modern e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, product catalog, shopping cart, and payment integration.",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
+      title: "AI-Powered Learning Platform",
+      description: "Developed an intelligent learning management system that uses AI to personalize education content based on student performance and learning style.",
+      tags: ["Python", "TensorFlow", "React", "MongoDB"],
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, task assignments, and progress tracking. Built with React, Firebase, and Tailwind CSS.",
-      tags: ["React", "Firebase", "Tailwind", "Redux"],
+      title: "Health Monitoring System",
+      description: "Created a comprehensive health monitoring application that tracks vital signs and provides real-time analytics for healthcare professionals.",
+      tags: ["IoT", "Java", "SQL", "Data Analysis"],
     },
     {
       id: 3,
-      title: "Healthcare Dashboard",
-      description: "An interactive dashboard for healthcare professionals to monitor patient data, schedule appointments, and manage records. Built with React, TypeScript, and Chart.js.",
-      tags: ["React", "TypeScript", "Chart.js", "REST API"],
+      title: "E-Commerce Solution",
+      description: "Built a full-stack e-commerce platform with features like product catalog, user authentication, payment processing, and order management.",
+      tags: ["React", "Node.js", "Express", "MongoDB"],
     },
     {
       id: 4,
-      title: "Portfolio Website",
-      description: "A responsive portfolio website (like this one!) built with React, TypeScript, and Tailwind CSS. Features a clean design, smooth animations, and contact form.",
-      tags: ["React", "TypeScript", "Tailwind CSS"],
+      title: "Blockchain Voting System",
+      description: "Implemented a secure and transparent voting system using blockchain technology to ensure the integrity of the electoral process.",
+      tags: ["Solidity", "Ethereum", "Web3.js", "React"],
     },
   ];
 
@@ -42,11 +42,11 @@ const Projects = () => {
     <section id="projects" className="section-padding bg-portfolio-light-gray">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center mb-12 text-center">
-          <Link className="text-portfolio-blue mb-4 h-8 w-8" />
+          <Code className="text-portfolio-blue mb-4 h-8 w-8" />
           <h2 className="section-heading">My Projects</h2>
           <p className="text-portfolio-gray max-w-2xl">
-            Here are some of my recent projects. Each project represents a unique challenge 
-            and showcases different aspects of my technical skills and problem-solving abilities.
+            Here are some of my notable computer science projects that demonstrate my technical 
+            expertise and problem-solving approach in developing innovative solutions.
           </p>
         </div>
 
@@ -54,9 +54,18 @@ const Projects = () => {
           {projects.map((project) => (
             <Card key={project.id} className="overflow-hidden card-hover border-none">
               <div className="aspect-video bg-gradient-to-br from-portfolio-blue/20 to-portfolio-light-blue/30 flex items-center justify-center">
-                <div className="text-3xl font-bold text-portfolio-blue/40">
-                  Project {project.id}
-                </div>
+                {project.id === 3 && (
+                  <img 
+                    src="/lovable-uploads/23a3bde7-3c36-445e-bf71-729f62402af1.png" 
+                    alt="Project Team" 
+                    className="w-full h-full object-cover"
+                  />
+                )}
+                {!project.image && project.id !== 3 && (
+                  <div className="text-3xl font-bold text-portfolio-blue/40">
+                    Project {project.id}
+                  </div>
+                )}
               </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold text-portfolio-dark-blue mb-2">

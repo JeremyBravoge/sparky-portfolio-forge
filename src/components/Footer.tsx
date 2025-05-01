@@ -17,7 +17,7 @@ const Footer = () => {
     },
     {
       name: "Email",
-      url: "mailto:john@example.com",
+      url: "mailto:david@example.com",
       icon: Mail,
     },
   ];
@@ -27,7 +27,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center">
           <h2 className="text-2xl font-bold mb-4">
-            Portfolio<span className="text-portfolio-blue">.</span>
+            David Kariuki<span className="text-portfolio-blue">.</span>
           </h2>
 
           <div className="flex space-x-6 mb-8">
@@ -47,7 +47,7 @@ const Footer = () => {
 
           <div className="text-gray-400 text-center">
             <p className="mb-2">
-              &copy; {currentYear} John Doe. All rights reserved.
+              &copy; {currentYear} David Kariuki. All rights reserved.
             </p>
             <p className="text-sm">
               Designed and built with ❤️ using React, TypeScript, and Tailwind CSS

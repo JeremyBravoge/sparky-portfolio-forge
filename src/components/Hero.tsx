@@ -20,25 +20,38 @@ const Hero = () => {
       </div>
       
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl">
-          <p className="text-portfolio-blue font-medium mb-4">Hello, I'm</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-portfolio-dark-blue mb-6">
-            John Doe
-          </h1>
-          <h2 className="text-2xl md:text-3xl text-portfolio-gray font-medium mb-6">
-            Full Stack Developer
-          </h2>
-          <p className="text-lg text-portfolio-gray mb-8 max-w-2xl">
-            I design and build digital experiences that are intuitive, accessible, and impactful.
-            Passionate about creating solutions that solve real-world problems.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Button className="btn-primary">
-              Download CV
-            </Button>
-            <Button onClick={scrollToAbout} variant="outline" className="btn-outline">
-              Learn More
-            </Button>
+        <div className="flex flex-col md:flex-row gap-8 items-center">
+          <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+            <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-portfolio-blue shadow-lg">
+              <img 
+                src="/lovable-uploads/aad07378-3477-4287-8b57-78c0f7d14f4b.png" 
+                alt="Profile Picture" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          
+          <div className="w-full md:w-1/2">
+            <p className="text-portfolio-blue font-medium mb-4">Hello, I'm</p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-portfolio-dark-blue mb-6">
+              David Kariuki
+            </h1>
+            <h2 className="text-2xl md:text-3xl text-portfolio-gray font-medium mb-6">
+              Computer Science Expert
+            </h2>
+            <p className="text-lg text-portfolio-gray mb-8 max-w-2xl">
+              I specialize in software development, system architecture, and innovative 
+              technology solutions. Passionate about creating impactful applications 
+              that solve real-world problems.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Button className="btn-primary">
+                Download CV
+              </Button>
+              <Button onClick={scrollToAbout} variant="outline" className="btn-outline">
+                Learn More
+              </Button>
+            </div>
           </div>
         </div>
       </div>

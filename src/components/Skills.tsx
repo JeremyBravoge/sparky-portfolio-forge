@@ -14,33 +14,33 @@ interface Skill {
 const Skills = () => {
   const skillCategories: SkillCategory[] = [
     {
-      title: "Frontend Development",
+      title: "Programming Languages",
       skills: [
-        { name: "HTML/CSS", level: 90 },
+        { name: "Python", level: 90 },
         { name: "JavaScript", level: 85 },
-        { name: "React", level: 80 },
-        { name: "TypeScript", level: 75 },
-        { name: "Tailwind CSS", level: 85 },
+        { name: "Java", level: 80 },
+        { name: "C/C++", level: 75 },
+        { name: "SQL", level: 80 },
       ],
     },
     {
-      title: "Backend Development",
+      title: "Web Development",
       skills: [
-        { name: "Node.js", level: 75 },
-        { name: "Express", level: 80 },
+        { name: "React.js", level: 85 },
+        { name: "Node.js", level: 80 },
+        { name: "HTML/CSS", level: 90 },
+        { name: "Express.js", level: 75 },
         { name: "MongoDB", level: 70 },
-        { name: "SQL", level: 65 },
-        { name: "GraphQL", level: 60 },
       ],
     },
     {
-      title: "Tools & Others",
+      title: "Tools & Technologies",
       skills: [
         { name: "Git", level: 85 },
-        { name: "Docker", level: 65 },
-        { name: "Jest", level: 70 },
-        { name: "CI/CD", level: 65 },
-        { name: "AWS", level: 60 },
+        { name: "Docker", level: 75 },
+        { name: "AWS", level: 70 },
+        { name: "Machine Learning", level: 65 },
+        { name: "DevOps", level: 60 },
       ],
     },
   ];
@@ -52,8 +52,8 @@ const Skills = () => {
           <Code className="text-portfolio-blue mb-4 h-8 w-8" />
           <h2 className="section-heading">My Skills</h2>
           <p className="text-portfolio-gray max-w-2xl">
-            I've developed expertise in various technologies and tools throughout my career.
-            Here's an overview of my technical skills and proficiency levels.
+            As a computer science professional, I've developed expertise in various programming languages, 
+            frameworks, and technologies. Here's an overview of my technical skills.
           </p>
         </div>
 
