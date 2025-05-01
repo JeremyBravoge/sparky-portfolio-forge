@@ -31,7 +31,7 @@ const Projects = () => {
       title: "Web Analytics Dashboard",
       description: "Created a comprehensive analytics dashboard for tracking website performance, user behavior, and conversion metrics to support data-driven decision making.",
       tags: ["Google Analytics", "Data Visualization", "Reporting"],
-      image: "/lovable-uploads/23a3bde7-3c36-445e-bf71-729f62402af1.png",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
     },
     {
       id: 4,
@@ -43,10 +43,10 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="section-padding bg-portfolio-light-gray">
+    <section id="projects" className="section-padding bg-gradient-to-br from-purple-50 to-blue-50">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center mb-12 text-center">
-          <Code className="text-portfolio-blue mb-4 h-8 w-8" />
+          <Code className="text-purple-600 mb-4 h-8 w-8" />
           <h2 className="section-heading">My Projects</h2>
           <p className="text-portfolio-gray max-w-2xl">
             Here are some of my notable web management projects that demonstrate my 
@@ -56,8 +56,8 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
-            <Card key={project.id} className="overflow-hidden card-hover border-none">
-              <div className="aspect-video bg-gradient-to-br from-portfolio-blue/20 to-portfolio-light-blue/30 flex items-center justify-center">
+            <Card key={project.id} className="overflow-hidden card-hover border-none shadow-md">
+              <div className="aspect-video bg-gradient-to-br from-purple-400/20 to-blue-300/30 flex items-center justify-center">
                 {project.image && (
                   <img 
                     src={project.image} 
@@ -66,13 +66,13 @@ const Projects = () => {
                   />
                 )}
                 {!project.image && (
-                  <div className="text-3xl font-bold text-portfolio-blue/40">
+                  <div className="text-3xl font-bold text-purple-600/40">
                     Project {project.id}
                   </div>
                 )}
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-portfolio-dark-blue mb-2">
+                <h3 className="text-xl font-bold text-purple-800 mb-2">
                   {project.title}
                 </h3>
                 <p className="text-portfolio-gray mb-4">
@@ -82,7 +82,7 @@ const Projects = () => {
                   {project.tags.map((tag, index) => (
                     <span 
                       key={index} 
-                      className="bg-portfolio-blue/10 text-portfolio-blue px-3 py-1 rounded-full text-sm"
+                      className="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm"
                     >
                       {tag}
                     </span>
@@ -96,7 +96,7 @@ const Projects = () => {
         <div className="mt-12 text-center">
           <a 
             href="#" 
-            className="btn-outline inline-flex items-center space-x-2"
+            className="btn-outline inline-flex items-center space-x-2 border-purple-600 text-purple-600 hover:bg-purple-600"
           >
             <span>View All Projects</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
