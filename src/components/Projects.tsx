@@ -17,24 +17,28 @@ const Projects = () => {
       title: "Corporate Website Redesign",
       description: "Led the redesign of the company website, improving user experience and increasing mobile responsiveness by 40% while managing content migration.",
       tags: ["WordPress", "UI/UX", "Content Management", "SEO"],
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
     },
     {
       id: 2,
       title: "E-commerce Integration",
       description: "Implemented an e-commerce solution for client products, coordinating between development team and stakeholders to ensure timely delivery and functionality.",
       tags: ["WooCommerce", "Payment Gateway", "Product Management"],
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
     },
     {
       id: 3,
       title: "Web Analytics Dashboard",
       description: "Created a comprehensive analytics dashboard for tracking website performance, user behavior, and conversion metrics to support data-driven decision making.",
       tags: ["Google Analytics", "Data Visualization", "Reporting"],
+      image: "/lovable-uploads/23a3bde7-3c36-445e-bf71-729f62402af1.png",
     },
     {
       id: 4,
       title: "Digital Marketing Campaign",
       description: "Managed the web components of a multi-channel marketing campaign, including landing pages, form integrations, and tracking implementation.",
       tags: ["Landing Pages", "Forms", "Campaign Tracking"],
+      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
     },
   ];
 
@@ -54,14 +58,14 @@ const Projects = () => {
           {projects.map((project) => (
             <Card key={project.id} className="overflow-hidden card-hover border-none">
               <div className="aspect-video bg-gradient-to-br from-portfolio-blue/20 to-portfolio-light-blue/30 flex items-center justify-center">
-                {project.id === 3 && (
+                {project.image && (
                   <img 
-                    src="/lovable-uploads/23a3bde7-3c36-445e-bf71-729f62402af1.png" 
-                    alt="Project Team" 
+                    src={project.image} 
+                    alt={project.title}
                     className="w-full h-full object-cover"
                   />
                 )}
-                {!project.image && project.id !== 3 && (
+                {!project.image && (
                   <div className="text-3xl font-bold text-portfolio-blue/40">
                     Project {project.id}
                   </div>
