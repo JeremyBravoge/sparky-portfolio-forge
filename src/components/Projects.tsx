@@ -31,7 +31,7 @@ const Projects = () => {
       title: "Web Analytics Dashboard",
       description: "Created a comprehensive analytics dashboard for tracking website performance, user behavior, and conversion metrics to support data-driven decision making.",
       tags: ["Google Analytics", "Data Visualization", "Reporting"],
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+      image:"public/lovable-uploads/web analytics.png ",
     },
     {
       id: 4,

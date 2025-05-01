@@ -15,7 +15,7 @@ const About = () => {
           <div className="bg-gradient-to-br from-purple-100 to-blue-50 rounded-lg p-1">
             <div className="rounded-lg overflow-hidden flex items-center justify-center">
               <img 
-                src="/lovable-uploads/ccaee9c8-5c23-4115-92bc-a056d69e35e3.png" 
+                src="public/lovable-uploads/ccaee9c8-5c23-4115-92bc-a056d69e35e3-removebg-preview.png" 
                 alt="Professional Photo" 
                 className="w-full h-auto rounded-lg"
               />
@@ -68,10 +68,10 @@ const About = () => {
             <div className="bg-gradient-to-br from-purple-50 to-blue-50 p-6 rounded-xl shadow-md max-w-md">
               <div className="flex flex-col items-center text-center">
                 <Avatar className="w-24 h-24 border-4 border-purple-200 mb-4">
-                  <AvatarImage src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e" alt="Collaborator" />
+                  <AvatarImage src="https://images.unsplash.com/photo-1500648767791-00dcc994a43" alt="Collaborator" />
                   <AvatarFallback>CN</AvatarFallback>
                 </Avatar>
-                <h4 className="font-bold text-xl text-slate-800 mb-2">Charles Ndirangu</h4>
+                <h4 className="font-bold text-xl text-slate-800 mb-2"></h4>
                 <p className="text-purple-600 mb-4">Full Stack Developer</p>
                 <p className="text-portfolio-gray mb-6">
                   A talented developer who collaborates with me on various web projects, 

@@ -12,7 +12,7 @@ const Footer = () => {
     },
     {
       name: "Facebook",
-      url: "https://facebook.com/jeremybravoge",
+      url: "https://www.facebook.com/profile.php?id=100094417877954",
       icon: Facebook,
     },
     {
@@ -22,7 +22,7 @@ const Footer = () => {
     },
     {
       name: "Instagram",
-      url: "https://instagram.com/jeremybravoge",
+      url:"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fsys.deve%3Figsh%3DYXdqNnZiNnI2MnYx%26fbclid%3DIwZXh0bgNhZW0CMTAAAR5Kss5AyAdfrA3CqT6oTiev-3m2QwrtKu_DfiY4-VcPljeFeoNLEokBigF6Ow_aem_a5jD0AHqou_botrSaSkX3A&h=AT3yw0GQ-J139_kGi2jJ3l4h2OZeuSkWLf9aaYe8U-q8gWH7jZvpguPBZPdYdstrBnBYEeQy1358xkNq7NcEIpfqJqVdBU3EbBqP2lxV4tYOOCEiVnAFNbOAZEyDBAIg2m7NKw",
       icon: Instagram,
     },
   ];
