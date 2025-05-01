@@ -24,7 +24,7 @@ const Hero = () => {
           <div className="w-full md:w-1/2 flex justify-center md:justify-end">
             <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-portfolio-blue shadow-lg">
               <img 
-                src="/lovable-uploads/aad07378-3477-4287-8b57-78c0f7d14f4b.png" 
+                src="/lovable-uploads/ccaee9c8-5c23-4115-92bc-a056d69e35e3.png" 
                 alt="Profile Picture" 
                 className="w-full h-full object-cover"
               />

@@ -1,5 +1,6 @@
 
 import { User } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const About = () => {
   return (
@@ -14,7 +15,7 @@ const About = () => {
           <div className="bg-portfolio-light-gray rounded-lg p-1">
             <div className="rounded-lg overflow-hidden flex items-center justify-center">
               <img 
-                src="/lovable-uploads/f6c3ac9c-a79d-446f-abed-6eeb0c83f3b2.png" 
+                src="/lovable-uploads/60facd96-dc6b-419d-8c02-e77529c644d2.png" 
                 alt="Professional Photo" 
                 className="w-full h-auto rounded-lg"
               />
@@ -43,7 +44,11 @@ const About = () => {
               </div>
               <div>
                 <p className="font-semibold text-portfolio-dark-blue">Email:</p>
-                <p className="text-portfolio-gray">jeremy@example.com</p>
+                <p className="text-portfolio-gray">codemaster5362@gmail.com</p>
+              </div>
+              <div>
+                <p className="font-semibold text-portfolio-dark-blue">Phone:</p>
+                <p className="text-portfolio-gray">0115000514</p>
               </div>
               <div>
                 <p className="font-semibold text-portfolio-dark-blue">Location:</p>

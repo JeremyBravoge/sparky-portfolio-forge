@@ -17,7 +17,7 @@ const Footer = () => {
     },
     {
       name: "Email",
-      url: "mailto:jeremy@example.com",
+      url: "mailto:codemaster5362@gmail.com",
       icon: Mail,
     },
   ];

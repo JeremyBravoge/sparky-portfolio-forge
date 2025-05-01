@@ -42,19 +42,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "john@example.com",
-      link: "mailto:john@example.com",
+      value: "codemaster5362@gmail.com",
+      link: "mailto:codemaster5362@gmail.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      value: "0115000514",
+      link: "tel:0115000514",
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "New York, USA",
+      value: "Nairobi, Kenya",
       link: null,
     },
   ];
