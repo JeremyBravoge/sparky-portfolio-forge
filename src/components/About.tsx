@@ -27,7 +27,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="bg-gradient-to-br from-amber-200 to-red-200 rounded-lg p-1 transform hover:scale-105 transition-all duration-300">
             <div className="rounded-lg overflow-hidden flex items-center justify-center">
-              <img alt="Professional Photo" src="/lovable-uploads/db6567a6-4142-4cbb-b457-f89cda709d20.jpg" className="w-full h-auto rounded-lg object-scale-down" />
+              <img alt="Professional Photo" src="/lovable-uploads/db6567a6-4142-4cbb-b457-f89cda709d20.jpg" className="w-full h-auto rounded-lg object-fill" />
             </div>
           </div>
           
