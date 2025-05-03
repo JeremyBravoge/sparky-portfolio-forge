@@ -3,16 +3,37 @@ import { User } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const About = () => {
+  const teamMembers = [
+    {
+      name: "Jacob Kisato",
+      role: "Film Instructor",
+      image: "public/lovable-uploads/e3232014-5f53-4c70-81ef-3885f67b7d1e.png",
+      description: "As a photography teacher, I blend technical mastery with artistic vision. I don't just teach camera use—I inspire students to see creatively, tell stories through imagery, and unlock their full potential."
+    },
+    {
+      name: "Samuel Onditi",
+      role: "Computer Instructor",
+      image: "public/lovable-uploads/e3232014-5f53-4c70-81ef-3885f67b7d1e.png",
+      description: "I'm a computer teacher with a passion for two things: empowering lives through digital skills and drawing hearts closer to God. Every class is more than just tech—it's purpose, impact, and faith in action."
+    },
+    {
+      name: "Jeremy Bravoge",
+      role: "Computer Instructor",
+      image: "public/lovable-uploads/e3232014-5f53-4c70-81ef-3885f67b7d1e.png",
+      description: "A passionate and dedicated Computer Teacher with a focus on empowering students through practical skills. Experienced in delivering engaging lessons on computer literacy."
+    }
+  ];
+
   return (
-    <section id="about" className="section-padding bg-white">
+    <section id="about" className="section-padding bg-gradient-to-br from-orange-50 to-red-100">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center mb-12 text-center">
-          <User className="text-purple-600 mb-4 h-8 w-8" />
-          <h2 className="section-heading after:bg-purple-600">About Me</h2>
+          <User className="text-red-600 mb-4 h-8 w-8 animate-bounce" />
+          <h2 className="section-heading after:bg-red-600">About Me</h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="bg-gradient-to-br from-purple-100 to-blue-50 rounded-lg p-1">
+          <div className="bg-gradient-to-br from-amber-200 to-red-200 rounded-lg p-1 transform hover:scale-105 transition-all duration-300">
             <div className="rounded-lg overflow-hidden flex items-center justify-center">
               <img 
                 src="public/lovable-uploads/ccaee9c8-5c23-4115-92bc-a056d69e35e3-removebg-preview.png" 
@@ -22,7 +43,7 @@ const About = () => {
             </div>
           </div>
           
-          <div>
+          <div className="animate-fade-in">
             <h3 className="text-2xl font-bold text-slate-800 mb-4">
               A Computer Science Professional based in Nairobi, Kenya
             </h3>
@@ -63,30 +84,32 @@ const About = () => {
         </div>
 
         <div className="mt-20">
-          <h3 className="text-2xl font-bold text-center mb-10 text-slate-800">My Collaborators</h3>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-            <div className="bg-gradient-to-br from-purple-50 to-blue-50 p-6 rounded-xl shadow-md max-w-md">
-              <div className="flex flex-col items-center text-center">
-                <Avatar className="w-24 h-24 border-4 border-purple-200 mb-4">
-                  <AvatarImage src="https://images.unsplash.com/photo-1500648767791-00dcc994a43" alt="Collaborator" />
-                  <AvatarFallback>CN</AvatarFallback>
-                </Avatar>
-                <h4 className="font-bold text-xl text-slate-800 mb-2"></h4>
-                <p className="text-purple-600 mb-4">Full Stack Developer</p>
-                <p className="text-portfolio-gray mb-6">
-                  A talented developer who collaborates with me on various web projects, 
-                  bringing expertise in backend development and database management.
-                </p>
-                <div className="flex space-x-4 text-gray-500">
-                  <a href="#" className="hover:text-purple-600 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-                  </a>
-                  <a href="#" className="hover:text-purple-600 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                  </a>
+          <h3 className="text-2xl font-bold text-center mb-10 text-slate-800">My Inspiring Team</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {teamMembers.map((member, index) => (
+              <div 
+                key={member.name} 
+                className="bg-gradient-to-br from-red-50 to-amber-100 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-red-200 mb-4">
+                    <img 
+                      src={member.image} 
+                      alt={member.name} 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="bg-red-600 text-white text-sm font-bold py-1 px-3 rounded-full mb-2">
+                    {member.role}
+                  </div>
+                  <h4 className="font-bold text-xl text-slate-800 mb-2">{member.name}</h4>
+                  <p className="text-portfolio-gray">
+                    {member.description}
+                  </p>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

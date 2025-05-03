@@ -51,11 +51,28 @@
   .section-padding {
     @apply py-16 md:py-24;
   }
+
+  /* Adding custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-amber-50;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-red-400 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-red-500;
+  }
 }
 
 @layer components {
   .section-heading {
-    @apply text-3xl md:text-4xl font-bold mb-8 text-portfolio-dark-blue relative inline-block after:content-[''] after:absolute after:w-1/2 after:h-1 after:bg-portfolio-blue after:bottom-0 after:left-0 after:rounded-full;
+    @apply text-3xl md:text-4xl font-bold mb-8 text-portfolio-dark-blue relative inline-block after:content-[''] after:absolute after:w-1/2 after:h-1 after:bg-red-600 after:bottom-0 after:left-0 after:rounded-full;
   }
   
   .card-hover {
@@ -63,10 +80,53 @@
   }
   
   .btn-primary {
-    @apply bg-portfolio-blue hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-md transition-all duration-200 inline-flex items-center;
+    @apply bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded-md transition-all duration-300 inline-flex items-center hover:scale-105;
   }
   
   .btn-outline {
-    @apply border-2 border-portfolio-blue text-portfolio-blue hover:bg-portfolio-blue hover:text-white font-semibold py-2 px-6 rounded-md transition-all duration-200 inline-flex items-center;
+    @apply border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white font-semibold py-2 px-6 rounded-md transition-all duration-300 inline-flex items-center hover:scale-105;
   }
+
+  .underline-animation {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-red-500 hover:after:w-full after:transition-all after:duration-300;
+  }
+
+  .glow-on-hover {
+    @apply relative overflow-hidden z-10 before:absolute before:content-[''] before:inset-0 before:bg-gradient-to-r before:from-red-400 before:to-amber-300 before:opacity-0 hover:before:opacity-20 before:transition-opacity before:duration-300 before:-z-10;
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes gradient-background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-background {
+  background: linear-gradient(270deg, #ffedd5, #fee2e2);
+  background-size: 200% 200%;
+  animation: gradient-background 5s ease infinite;
 }
