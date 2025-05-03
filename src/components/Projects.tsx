@@ -49,7 +49,7 @@ const Projects = () => {
           animationDelay: `${index * 150}ms`
         }}>
               <div className="aspect-video bg-gradient-to-br from-red-400/20 to-amber-300/30 flex items-center justify-center bg-gray-900 rounded-2xl">
-                {project.image && <img src={project.image} alt={project.title} className="w-full h-full object-cover" />}
+                {project.image && <img src={project.image} alt={project.title} className="w-full h-full object-scale-down" />}
                 {!project.image && <div className="text-3xl font-bold text-red-600/40">
                     Project {project.id}
                   </div>}
