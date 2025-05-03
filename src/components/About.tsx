@@ -7,19 +7,19 @@ const About = () => {
     {
       name: "Jacob Kisato",
       role: "Film Instructor",
-      image: "public/lovable-uploads/e3232014-5f53-4c70-81ef-3885f67b7d1e.png",
+      image: "/lovable-uploads/c38d8635-d5cf-4a9c-a985-b84e563ea765.png",
       description: "As a photography teacher, I blend technical mastery with artistic vision. I don't just teach camera use—I inspire students to see creatively, tell stories through imagery, and unlock their full potential."
     },
     {
       name: "Samuel Onditi",
       role: "Computer Instructor",
-      image: "public/lovable-uploads/e3232014-5f53-4c70-81ef-3885f67b7d1e.png",
+      image: "/lovable-uploads/3afb2ee8-32da-484a-b5a7-4fa7efe50afa.png",
       description: "I'm a computer teacher with a passion for two things: empowering lives through digital skills and drawing hearts closer to God. Every class is more than just tech—it's purpose, impact, and faith in action."
     },
     {
       name: "Jeremy Bravoge",
       role: "Computer Instructor",
-      image: "public/lovable-uploads/e3232014-5f53-4c70-81ef-3885f67b7d1e.png",
+      image: "/lovable-uploads/b65b4358-ad5e-42ce-b7de-21ef0e3be920.png",
       description: "A passionate and dedicated Computer Teacher with a focus on empowering students through practical skills. Experienced in delivering engaging lessons on computer literacy."
     }
   ];
